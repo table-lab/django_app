@@ -1,3 +1,5 @@
+
+
 from django.shortcuts import render
 from django.http import HttpResponse
 from django.shortcuts import redirect
@@ -6,7 +8,7 @@ from .forms import UsetableForm
 from django.core.paginator import Paginator
 
 def index(request, num=1):
-    data = Use.objects.all().order_by('date','start')
+    data = Use.objects.all().order_by('date','start').reverse()
     page = Paginator(data, 5)
     params = {
             'title': 'usetable',

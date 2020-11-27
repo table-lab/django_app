@@ -18,8 +18,9 @@ from django.urls import path,include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('hello/', include('hello.urls')), 
+    path('hello/', include('hello.urls')),
     path('usetable/', include('usetable.urls')),
-]
+    path('ag360l_app/', include('ag360l_app.urls')),
+ ]
 
 

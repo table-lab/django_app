@@ -40,6 +40,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'hello',
     'usetable',
+    'ag360l_app'
 ]
 
 MIDDLEWARE = [
